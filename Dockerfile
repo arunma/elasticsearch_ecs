@@ -18,6 +18,6 @@ RUN /opt/elasticsearch/bin/plugin -url https://download.elasticsearch.org/kibana
 
 VOLUME ["/data", "/logs"]
 
-EXPOSE 9200 9300
+EXPOSE 9200 9300 5601
 
 CMD ["/opt/elasticsearch/bin/elasticsearch"]
