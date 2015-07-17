@@ -16,7 +16,7 @@ RUN sed -i 's/es\.logger\.level\: INFO/es\.logger\.level\: DEBUG/' /opt/elastics
 # Install Kibana
 RUN /opt/elasticsearch/bin/plugin -url https://download.elasticsearch.org/kibana/kibana/kibana-3.1.2.zip -install elasticsearch/kibana3
 
-VOLUME ["/data", "/logs"]
+#VOLUME ["/data", "/logs"]
 
 EXPOSE 9200 9300 5601
 
